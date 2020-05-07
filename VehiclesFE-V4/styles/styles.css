@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica', 'Lucida', 'Verdana', sans-serif;
+}
+body{
+	display: grid;
+  	grid-template-columns: 60% 40%;
+	grid-template-rows: 150px auto 60px;
+	grid-template-areas: 
+		"my-header my-header"			
+        "a c"        
+		"my-footer my-footer";  	
+    margin: 0 auto;  	
+    max-width: 1900px;
+  	min-height: 100vh;	
+}
+header{
+	grid-area: my-header;	
+	display: flex;
+	align-items: center;
+    justify-content: center;
+    background: url('../img/car2.jpg'), black;
+    background-size: cover;
+    background-position: center;
+    max-width: 1600px;
+}
+footer{
+	grid-area: my-footer;			
+	display: flex;
+	align-items: center;
+    justify-content: center;
+    background-color: #f3ccd4;
+}
+h1{
+    margin: 10px 0px;
+    color: white;
+    text-align: center;
+    font-size: 3.5em;
+    text-shadow: 0px 5px 10px black;
+}
+#sectionA{
+    grid-area: a;   
+    display: block;  
+}
+#sectionB2{
+    grid-area: b;  
+    display: none;  
+}
+#sectionC{
+    grid-area: c;
+}
+section.car, section.wheel{
+    display: flex;
+	flex-direction: column;
+    padding: 20px;
+    padding-left: 60px;
+	width: 90%;
+	font-size: 20px;
+}
+section.result{
+    display: flex;
+	flex-direction: column;
+	justify-content: start;
+    padding-left: 60px;
+    margin-bottom: 40px;
+}
+.myForm{
+    display:flex;    
+    margin-top: 40px;
+}
+.myForm div{
+    margin: 0px 10px 0px 0px;
+}
+label{
+    color:rgb(80, 1, 1);
+    padding-left: 2px;
+    font-size: 0.8em;
+}
+.myInput, .myWheelInput, .myCarInput{
+    display: flex; 
+    flex-direction: row;   
+    margin-top:4px;
+    margin-bottom: 20px;
+    padding-left: 8px;
+    width: 180px;
+    height: 45px;
+    align-content:center;
+    background-color: rgb(255, 154, 154, 0.3);
+    color:rgb(80, 1, 1);
+    border:none;
+    border-radius: 5px;
+    outline-color: rgb(80, 1, 1);
+}
+.myButton{
+    width: 188px;
+    height: 45px;
+    background-color: rgb(189, 3, 3);
+    color:white;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0px 2px 5px grey;
+    cursor: pointer;
+}
+#messageCar{
+    font-size: 1.2em;
+    color:rgb(80, 1, 1);
+    padding-top: 60px;
+}
+#messageWheel{
+    font-size: 1.2em;
+    color:rgb(80, 1, 1);
+    padding-top: 20px;
+}
+/* error attributes */
+#carError, #brandError, #diamError, #wheelError{
+    font-size: 0.8rem;
+    color: rgb(206, 5, 5);
+    padding-top: 4px;
+    padding-bottom: 10px;
+}
+.correct {    
+    display: flex; 
+    flex-direction: row;   
+    margin-top:4px;
+    margin-bottom: 20px;
+    padding-left: 8px;
+    width: 180px;
+    height: 45px;
+    align-content:center;
+    background-color: white;
+    color:rgb(80, 1, 1);
+    border: 2px solid rgb(143, 12, 12);
+    border-radius: 5px;
+    outline-color: rgb(143, 12, 12);
+}
+.incorrect {
+    display: flex; 
+    flex-direction: row;   
+    margin-top:4px;
+    margin-bottom: 20px;
+    padding-left: 8px;
+    width: 180px;
+    height: 45px;
+    align-content:center;
+    background-color: white;
+    color:rgb(80, 1, 1);
+    border: 2px solid red;
+    border-radius: 5px;
+    outline-color: rgb(80, 1, 1);
+}
+
+
+   

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicles</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+
+    <script src="../models/car.js"></script>
+    <script src="../models/wheel.js"></script>
+    <script src="../controllers/controller.js"></script>
+</head>
+<body>   
+   
+    <header>
+        <h1>Ejercicio vehículos</h1>
+    </header>
+    <section id="sectionA" >
+        <section id="sectionB1" class="car">
+            <form class="myForm" id="carForm">
+                <div class="divForm" id="divPlate">
+                    <label for="txtPlate">Plate</label>
+                    <input type="text" name="txtPlate" id="plate" class="myCarInput" placeholder="Ex: 1234ABC" >
+                </div>
+                <div class="divForm" id="divBrand">
+                    <label for="txtBrand">Brand</label>
+                    <input type="text" name="txtBrand" id="brand" class="myCarInput" placeholder="Ex: FORD">
+                </div>
+                <div class="divForm" id="divColor">
+                    <label for="txtColor">Color</label>
+                    <input type="text" name="txtColor" id="color" class="myCarInput" placeholder="Ex: ROJO">
+                </div>              
+            </form>
+            <p id="carError"></p>
+            <button class="myButton" onclick="createCar()">Create CAR</button>
+        </section>
+        <section  id="sectionB2" class="wheel">
+            <form class="myForm" id="wheelForm">
+                <div class="divForm" id="divPlate">
+                    <label for="txtBrandWheel1">Wheel 1 - BRAND</label>
+                    <input type="text" name="txtBrandWheel1" id="brandWheel1" class="myWheelInput">
+                    <label for="txtDiameterWheel1">Wheel 1 - DIAMETER</label>
+                    <input type="number" name="txtDiameterWheel1" id="diameterWheel1" class="myWheelInput" min="0.4" max="2" step="0.1">
+                </div>
+                <div class="divForm" id="divPlate">
+                    <label for="txtBrandWheel2">Wheel 2 - BRAND</label>
+                    <input type="text" name="txtBrandWheel2" id="brandWheel2" class="myWheelInput">
+                    <label for="txtDiameterWheel2">Wheel 2 - DIAMETER</label>
+                    <input type="number" name="txtDiameterWheel2" id="diameterWheel2" class="myWheelInput"  min="0.4" max="2" step="0.1">
+                </div>
+                <div class="divForm" id="divPlate">
+                    <label for="txtBrandWheel3">Wheel 3 - BRAND</label>
+                    <input type="text" name="txtBrandWheel3" id="brandWheel3" class="myWheelInput">
+                    <label for="txtDiameterWheel3">Wheel 3 - DIAMETER</label>
+                    <input type="number" name="txtDiameterWheel3" id="diameterWheel3" class="myWheelInput"  min="0.4" max="2" step="0.1">
+                </div>
+                <div class="divForm" id="divPlate">
+                    <label for="txtBrandWheel4">Wheel 4 - BRAND</label>
+                    <input type="text" name="txtBrandWheel4" id="brandWheel4" class="myWheelInput">
+                    <label for="txtDiameterWheel4">Wheel 4 - DIAMETER</label>
+                    <input type="number" name="txtDiameterWheel4" id="diameterWheel4" class="myWheelInput"  min="0.4" max="2" step="0.1">
+                </div>             
+            </form>
+            <p id="brandError"></p>
+            <p id="diamError"></p>
+            <p id="wheelError"></p>
+            <button class="myButton" onclick="addWheel()">Add WHEELS</button>
+        </section>  
+    </section>
+          
+    <section  id="sectionC" class="result">
+        <p id="messageCar"></p>        
+        <p id="messageWheel"></p>
+    </section>
+
+    <footer></footer>
+</body>
+</html>
